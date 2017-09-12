@@ -1,0 +1,50 @@
+$bar-thickness: 5px;
+$box-size: 30px;
+
+.menu-icon {
+  position: relative;
+  width: $box-size;
+  height: $box-size;
+  box-sizing: border-box;
+  text-align: center;
+
+  &__bar {
+    position: absolute;
+    width: 100%;
+    height: $bar-thickness;
+    background: #777;
+    border-radius: $bar-thickness / 2;
+    left: 0;
+    transition: all 0.3s;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - #{$bar-thickness / 2});
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+
+  &--active {
+    .menu-icon__bar:nth-child(1) {
+      transform: rotate(-45deg);
+      top: calc(50% - #{$bar-thickness / 2});
+    }
+
+    .menu-icon__bar:nth-child(2) {
+      width: 0;
+      left: 50%;
+    }
+
+    .menu-icon__bar:nth-child(3) {
+      transform: rotate(45deg);
+      top: calc(50% - #{$bar-thickness / 2});
+    }
+  }
+
+}

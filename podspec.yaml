@@ -13,6 +13,8 @@ static_dirs:
   serve_at: /static/css/
 - static_dir: /source/fonts/
   serve_at: /static/fonts/
+- static_dir: /source/js/
+  serve_at: /static/js/
 - static_dir: /source/images/
   serve_at: /static/images/
 

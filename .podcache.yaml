@@ -11,6 +11,8 @@ dependencies:
   - /dist/main.min.css
   - /source/images/banner3.jpg
   - /source/images/icon.png
+  - /source/js/app.js
+  - /source/js/vue.js
   /content/pages/profile.md:
   - /dist/main.min.css
   - /source/images/icon.png

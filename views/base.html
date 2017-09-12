@@ -2,12 +2,18 @@
 <html lang="{{doc.locale}}">
 <meta charset="utf-8">
 <title>{{_(doc.title)}} – {{_(podspec.title)}}</title>
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,500,500italic,600,700,700italic,800|Source+Code+Pro|Dosis:300,500">
 <link rel="stylesheet" href="{{g.static('/dist/main.min.css').url.path}}">
 <link rel="shortcut icon" href="{{g.static('/source/images/icon.png').url.path}}">
 <meta name="description" value="{{_(podspec.description)}}">
 <body>
-  <header>
+  <header class="header" id="header" v-bind:class="{active: open}">
+    <div class="header__toggle menu-icon" v-on:click="open = !open" v-bind:class="{'menu-icon--active': open}">
+      <div class="menu-icon__bar"></div>
+      <div class="menu-icon__bar"></div>
+      <div class="menu-icon__bar"></div>
+    </div>
   </header>
   <main>
     {% block main %}
@@ -17,5 +23,7 @@
   </main>
   <footer>
   </footer>
+  <script src="{{g.static('/source/js/vue.js').url.path}}"></script>
+  <script src="{{g.static('/source/js/app.js').url.path}}"></script>
 </body>
 
