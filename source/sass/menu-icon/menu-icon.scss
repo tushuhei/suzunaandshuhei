@@ -1,21 +1,23 @@
 $bar-thickness: 5px;
-$box-size: 30px;
+$box-size: 25px;
 
 .menu-icon {
-  position: relative;
-  width: $box-size;
-  height: $box-size;
+  display: inline-block;
   box-sizing: border-box;
+  height: $box-size;
+  position: relative;
   text-align: center;
+  width: $box-size;
+  z-index: 1000;
 
   &__bar {
-    position: absolute;
-    width: 100%;
-    height: $bar-thickness;
     background: #777;
     border-radius: $bar-thickness / 2;
+    height: $bar-thickness;
     left: 0;
+    position: absolute;
     transition: all 0.3s;
+    width: 100%;
 
     &:nth-child(1) {
       top: 0;
@@ -32,8 +34,8 @@ $box-size: 30px;
 
   &--active {
     .menu-icon__bar:nth-child(1) {
-      transform: rotate(-45deg);
       top: calc(50% - #{$bar-thickness / 2});
+      transform: rotate(-45deg);
     }
 
     .menu-icon__bar:nth-child(2) {
@@ -42,8 +44,8 @@ $box-size: 30px;
     }
 
     .menu-icon__bar:nth-child(3) {
-      transform: rotate(45deg);
       top: calc(50% - #{$bar-thickness / 2});
+      transform: rotate(45deg);
     }
   }
 
