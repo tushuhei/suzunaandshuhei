@@ -1,0 +1,17 @@
+dependencies:
+  /content/pages/index.md:
+  - /content/pages/about.md
+  - /content/pages/archive.md
+  - /content/pages/index.md
+  - /content/pages/team.md
+  - /content/posts/20130725.md
+  - /content/posts/20130927.md
+  - /content/posts/20140101.md
+  - /content/posts/20140204.md
+  - /dist/main.min.css
+  - /source/images/banner3.jpg
+  - /source/images/icon.png
+  /content/pages/profile.md:
+  - /dist/main.min.css
+  - /source/images/icon.png
+objects: {}

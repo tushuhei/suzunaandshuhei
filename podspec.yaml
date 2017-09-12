@@ -1,0 +1,27 @@
+grow_version: ">=0.0.55"
+title@: Suzuna and Shuhei wedding
+description@: "We are married! This is the website for our wedding ceremony on March 18th, 2018."
+
+error_routes:
+  default: /views/errors/default.html
+
+localization:
+  default_locale: ja
+
+static_dirs:
+- static_dir: /dist/
+  serve_at: /static/css/
+- static_dir: /source/fonts/
+  serve_at: /static/fonts/
+- static_dir: /source/images/
+  serve_at: /static/images/
+
+preprocessors:
+- kind: sass
+  sass_dir: /source/sass/
+  out_dir: /dist/
+
+deployments:
+  default:
+    destination: local
+    out_dir: out/

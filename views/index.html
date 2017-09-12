@@ -1,0 +1,25 @@
+{% extends "/views/base.html" %}
+
+{% block main %}
+
+  <div class="banner">
+    <div class="tagline">{{_(doc.tagline)}}</div>
+    <p><a href="http://www.flickr.com/photos/nasahqphoto/"><img alt="Image credit: NASA" src="{{g.static('/source/images/banner3.jpg').url.path}}"></a>
+  </div>
+
+  {{doc.html|safe}}
+
+  <h3>{{_('Latest updates')}}</h3>
+  <div class="posts">
+    {% for post in g.docs('posts', locale=doc.locale)[0:3] %}
+    <div class="post">
+      <h4><a href="{{post.url.path}}">{{post.title}}</a></h4>
+      <div class="snippet">
+        {{post.html|striptags|truncate(60)}}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <p><a href="{{g.url('/content/pages/archive.md', locale=doc.locale).path}}">{{_('View the archive')}}</a>
+
+{% endblock %}
