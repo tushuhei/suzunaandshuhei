@@ -14,6 +14,7 @@ dependencies:
   - /source/js/app.js
   - /source/js/vue.js
   - /view/logo.svg
+  - /views/font-face.tpl
   - /views/logo.svg
   /content/pages/profile.md:
   - /dist/main.min.css

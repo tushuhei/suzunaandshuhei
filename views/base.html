@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{doc.locale}}">
-<meta charset="utf-8">
-<title>{{_(doc.title)}} – {{_(podspec.title)}}</title>
-<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,500,500italic,600,700,700italic,800|Source+Code+Pro|Dosis:300,500">
-<link rel="stylesheet" href="{{g.static('/dist/main.min.css').url.path}}">
-<link rel="shortcut icon" href="{{g.static('/source/images/icon.png').url.path}}">
-<meta name="description" value="{{_(podspec.description)}}">
+<head>
+  <meta charset="utf-8">
+  <title>{{_(doc.title)}} – {{_(podspec.title)}}</title>
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,500,500italic,600,700,700italic,800|Source+Code+Pro|Dosis:300,500">
+  <link rel="stylesheet" href="{{g.static('/dist/main.min.css').url.path}}">
+  <link rel="shortcut icon" href="{{g.static('/source/images/icon.png').url.path}}">
+  <meta name="description" value="{{_(podspec.description)}}">
+  <style>{% include "/views/font-face.tpl" %}</style>
+</head>
 <body>
   <header class="header" id="header" v-bind:class="{'header--active': open}">
     <div class="header__toggle menu-icon" v-on:click="open = !open" v-bind:class="{'menu-icon--active': open}">
