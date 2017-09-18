@@ -1,0 +1,28 @@
+.giant-card {
+  height: 500px;
+
+  &__media {
+    float: left;
+    height: 100%;
+    object-fit: cover;
+    width: 70%;
+
+    &--alt {
+      float: right;
+    }
+  }
+
+  &__content {
+    background: $main-color;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    padding: 30px;
+    width: 30%;
+
+    &--alt {
+      background: $accent-color;
+    }
+  }
+}

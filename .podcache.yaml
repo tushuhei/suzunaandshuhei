@@ -13,6 +13,8 @@ dependencies:
   - /source/images/icon.png
   - /source/js/app.js
   - /source/js/vue.js
+  - /view/logo.svg
+  - /views/logo.svg
   /content/pages/profile.md:
   - /dist/main.min.css
   - /source/images/icon.png

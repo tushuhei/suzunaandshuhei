@@ -2,7 +2,13 @@
 @import "vars";
 
 body {
-  font-family: Roboto, arial, sans-serif;
+  font-family: 'Noto Sans CJK JP', arial, sans-serif;
+  background: $background-color;
 }
+
 @import "menu-icon/menu-icon";
 @import "header/header";
+@import "hero/hero";
+@import "footer/footer";
+@import "section/section";
+@import "giant-card/giant-card";

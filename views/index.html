@@ -1,10 +1,43 @@
 {% extends "/views/base.html" %}
 
 {% block main %}
-  <img src="/static/images/logo_animated.svg">
+  <section class="hero">
+    <div class="hero__container">
+      {% include "/views/logo.svg" %}
+    </div>
+  </section>
 
+  <section class="section" id="summary">
+    <div class="section__page">
+      <h2>飯塚 涼菜・修平 結婚式</h2>
+      <p>挙式します</p>
+      <h3>日時</h3>
+      <h4>2018 年 3 月 18 日（日）</h4>
+    </div>
+  </section>
 
-  {{doc.html|safe}}
+  <section class="giant-card" id="venue">
+    <img class="giant-card__media" src="https://lh3.googleusercontent.com/hIzRIvAw1PLBUryIW9duoKwfz67quDbDAsea36QIh0zH0a1hSTGYHkdATZboWWZm7rJlei-Q638X7EE8E4IAV2c=w1600">
+    <div class="giant-card__content">
+      <div class="giant-card__page">
+        <h3>会場</h3>
+        <h4>明日館</h4>
+      </div>
+    </div>
+  </section>
 
+  <section class="giant-card" id="map">
+    <iframe class="giant-card__media giant-card__media--alt" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1619.461201396507!2d139.70800170827056!3d35.72812687245591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2zSWtlYnVrdXJvIFN0YXRpb27jgIFUb2t5bywgVG9zaGltYSwg5Y2X5rGg6KKL77yR5LiB55uu77yS77yY4oiS77yR!3m2!1d35.7295028!2d139.7109001!4m5!1s0x60188d5cb31fdfc1%3A0x9221c4b3be3283ab!2z5piO5pel6aSo!3m2!1d35.726692!2d139.70725299999998!5e0!3m2!1sen!2sjp!4v1505742349047" frameborder="0" allowfullscreen></iframe>
+    <div class="giant-card__content giant-card__content--alt">
+      <div class="giant-card__page">
+        <h3>会場</h3>
+        <h4>明日館</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Copyright © Shuhei Iitsuka. 2017.
+  </footer>
 
 {% endblock %}
