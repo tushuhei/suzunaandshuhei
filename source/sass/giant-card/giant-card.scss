@@ -1,14 +1,22 @@
 .giant-card {
-  height: 500px;
+  @media only screen and (min-width : $bp-m) {
+    height: 500px;
+  }
 
   &__media {
-    float: left;
-    height: 100%;
     object-fit: cover;
-    width: 70%;
+    width: 100%;
+    display: block;
+    height: 400px;
 
-    &--alt {
-      float: right;
+    @media only screen and (min-width : $bp-m) {
+      float: left;
+      height: 100%;
+      width: 70%;
+
+      &--alt {
+        float: right;
+      }
     }
   }
 
@@ -17,12 +25,17 @@
     box-sizing: border-box;
     color: #fff;
     display: inline-block;
-    height: 100%;
-    padding: 30px;
-    width: 30%;
+    padding: 30px 30px 80px 30px;
+    width: 100%;
 
     &--alt {
       background: $accent-color;
+    }
+
+    @media only screen and (min-width : $bp-m) {
+      height: 100%;
+      padding: 30px;
+      width: 30%;
     }
   }
 }

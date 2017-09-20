@@ -1,15 +1,14 @@
 {% extends "/views/base.html" %}
 
 {% block main %}
-  <section class="hero">
-    <div class="hero__container">
-      {% include "/views/logo.svg" %}
+  <section class="hero" id="hero" v-bind:class="{'hero--loaded': loaded}">
+    <div class="hero__container" id="hero__container">
     </div>
   </section>
 
   <section class="section" id="summary">
     <div class="section__page">
-      <h2>飯塚 涼菜・修平 結婚式</h2>
+      <h2>March 18th, 2018</h2>
       <p>挙式します</p>
       <h3>日時</h3>
       <h4>2018 年 3 月 18 日（日）</h4>

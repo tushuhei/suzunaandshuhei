@@ -11,7 +11,9 @@ dependencies:
   - /dist/main.min.css
   - /source/images/banner3.jpg
   - /source/images/icon.png
+  - /source/images/logo.svg
   - /source/js/app.js
+  - /source/js/vivus.js
   - /source/js/vue.js
   - /view/logo.svg
   - /views/font-face.tpl
