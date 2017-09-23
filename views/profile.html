@@ -25,8 +25,12 @@
           {% for graph in commit.graphs %}
             <div class="commit__thread">
               {% for g in graph %}
-                <svg viewBox="0 0 50 100" class="commit__graph commit__graph--{{g.color}}">
+                <svg viewBox="0 0 100 100" class="commit__graph commit__graph--{{g.color}}">
                   <use xlink:href="#{{g.type}}"></use></svg>
+                {% if g.type == 'init' or g.type == 'pass' %}
+                  <svg class="commit__graph commit__graph--ext commit__graph--{{g.color}}">
+                    <use xlink:href="#pass"></use></svg>
+                {% endif %}
               {% endfor %}
             </div>
           {% endfor %}
@@ -44,17 +48,17 @@
 
 <svg style="display:none">
   <symbol id="init">
-    <line x1="50%" y1="50%" x2="50%" y2="100%" stroke-width="5"></line>
-    <circle cx="50%" cy="50%" r="10" fill="#fff" stroke-width="5"></circle>
+    <line x1="50%" y1="50%" x2="50%" y2="100%" vector-effect="non-scaling-stroke"></line>
+    <circle cx="50%" cy="50%" r="10" fill="#fff" vector-effect="non-scaling-stroke"></circle>
   </symbol>
   <symbol id="pass">
-    <line x1="50%" y1="0%" x2="50%" y2="100%" stroke-width="5"></line>
+    <line x1="50%" y1="0%" x2="50%" y2="100%" vector-effect="non-scaling-stroke"></line>
   </symbol>
   <symbol id="curve">
-    <path fill="none" d="M 25,0 L 25,25 A 25,25 0 0 1 0,50" stroke-width="5"></path>
+    <path fill="none" d="M 50,0 A 50,50 0 0 1 0,50" vector-effect="non-scaling-stroke"></path>
   </symbol>
   <symbol id="cross">
-    <line x1="100%" y1="50%" x2="50%" y2="50%" stroke-width="5"></line>
+    <line x1="100%" y1="50%" x2="50%" y2="50%" vector-effect="non-scaling-stroke"></line>
   </symbol>
 </svg>
 {% endblock %}
