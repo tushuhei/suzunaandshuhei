@@ -1,20 +1,31 @@
 .commit {
+  display: flex;
   width: 100%;
+  align-items: center;
 
   &__thread {
-    background: #ddd;
-    height: 100px;
     width: 100px;
-
-    svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+    height: 200px;
+    position: relative;
   }
 
-  &__content {
-    background: #eee;
+  &__graph {
+    display: block;
+    height: 100%;
+    stroke: currentColor;
+    width: 100%;
+    position: absolute;
 
+    &--cyan {
+      color: #0ff;
+    }
+
+    &--yellow {
+      color: #ff0;
+    }
+
+    &--magenta {
+      color: #f0f;
+    }
   }
 }
