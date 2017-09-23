@@ -3,6 +3,9 @@
   width: 100%;
   align-items: center;
 
+  &__content {
+  }
+
   &__thread {
     width: 100px;
     height: 200px;
@@ -27,5 +30,11 @@
     &--magenta {
       color: #f0f;
     }
+  }
+
+  &__image {
+    float: left;
+    width: 100px;
+    border-radius: 50px;
   }
 }

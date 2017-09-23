@@ -19,51 +19,23 @@
 <section class="section" id="tree">
   <div class="section__page">
     <div class="commits">
-      <div class="commit">
-        <div class="commit__thread">
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--cyan">
-            <use xlink:href="#init"></use></svg>
+      {% for commit in doc.commits %}
+        <div class="commit">
+          {% for graph in commit.graphs %}
+            <div class="commit__thread">
+              {% for g in graph %}
+                <svg viewBox="0 0 50 100" class="commit__graph commit__graph--{{g.color}}">
+                  <use xlink:href="#{{g.type}}"></use></svg>
+              {% endfor %}
+            </div>
+          {% endfor %}
+          <div class="commit__content">
+            <img class="commit__image" src="{{commit.image}}">
+            <h3 class="commit__title">{{commit.title}}</h3>
+            <p class="commit__body">{{commit.content}}</p>
+          </div>
         </div>
-        <div class="commit__content">
-          <div class="commit__thumbnail"></div>
-          <h3 class="commit__title">〇〇に生まれる</h3>
-          <p class="commit__body">内容です。</p>
-        </div>
-      </div>
-      <div class="commit">
-        <div class="commit__thread">
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--cyan">
-            <use xlink:href="#pass"></use></svg>
-        </div>
-        <div class="commit__thread">
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--magenta">
-            <use xlink:href="#init"></use></svg>
-        </div>
-        <div class="commit__content">
-          <div class="commit__thumbnail"></div>
-          <h3 class="commit__title">〇〇に生まれる</h3>
-          <p class="commit__body">内容です。</p>
-        </div>
-      </div>
-      <div class="commit">
-        <div class="commit__thread">
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--cyan">
-            <use xlink:href="#pass"></use></svg>
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--magenta">
-            <use xlink:href="#cross"></use></svg>
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--yellow">
-            <use xlink:href="#init"></use></svg>
-        </div>
-        <div class="commit__thread">
-          <svg viewBox="0 0 50 100" class="commit__graph commit__graph--magenta">
-            <use xlink:href="#curve"></use></svg>
-        </div>
-        <div class="commit__content">
-          <div class="commit__thumbnail"></div>
-          <h3 class="commit__title">〇〇に生まれる</h3>
-          <p class="commit__body">内容です。</p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
