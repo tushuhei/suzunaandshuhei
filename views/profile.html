@@ -2,6 +2,20 @@
 
 {% block main %}
 
+<section class="section" id="profile">
+  <div class="section__page">
+    <div class="profile">
+      {% for profile in doc.profiles %}
+        <div class="profile__item">
+          <img class="profile__image" src="{{profile.image}}">
+          <h3 class="profile__name">{{profile.name}}</h3>
+          <p class="profile__content">{{profile.content}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="section" id="tree">
   <div class="section__page">
     <div class="commits">

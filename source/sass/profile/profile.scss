@@ -1,0 +1,14 @@
+.profile {
+  &__item {
+    width: 49%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+  }
+
+  &__image {
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+}

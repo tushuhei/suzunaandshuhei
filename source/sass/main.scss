@@ -3,7 +3,7 @@
 
 body {
   background: $background-color;
-  font-family: 'Bourton Hand Base', 'Noto Sans CJK JP', arial, sans-serif;
+  font-family: Helvetica Neue, 'Noto Sans CJK JP', arial, sans-serif;
 }
 
 @import "menu-icon/menu-icon";
@@ -13,3 +13,4 @@ body {
 @import "section/section";
 @import "giant-card/giant-card";
 @import "commit/commit";
+@import "profile/profile";
