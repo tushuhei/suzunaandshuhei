@@ -1,4 +1,13 @@
 .profile {
+  &__title {
+
+    svg {
+      width: 200px;
+      padding: 10px;
+      stroke: $color-gold;
+    }
+  }
+
   &__item {
     width: 49%;
     box-sizing: border-box;

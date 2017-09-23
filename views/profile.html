@@ -5,6 +5,7 @@
 <section class="section" id="profile">
   <div class="section__page">
     <div class="profile">
+      <div class="profile__title" id="profile__title"></div>
       {% for profile in doc.profiles %}
         <div class="profile__item">
           <img class="profile__image" src="{{profile.image}}">
@@ -31,8 +32,9 @@
           {% endfor %}
           <div class="commit__content">
             <img class="commit__image" src="{{commit.image}}">
+            <div class="commit__date">{{commit.date}}</div>
             <h3 class="commit__title">{{commit.title}}</h3>
-            <p class="commit__body">{{commit.content}}</p>
+            <p class="commit__body">{{commit.body}}</p>
           </div>
         </div>
       {% endfor %}
@@ -49,7 +51,7 @@
     <line x1="50%" y1="0%" x2="50%" y2="100%" stroke-width="5"></line>
   </symbol>
   <symbol id="curve">
-    <path fill="none" d="M 25,0 A 25,50 0 0 1 0,50" stroke-width="5"></path>
+    <path fill="none" d="M 25,0 L 25,25 A 25,25 0 0 1 0,50" stroke-width="5"></path>
   </symbol>
   <symbol id="cross">
     <line x1="100%" y1="50%" x2="50%" y2="50%" stroke-width="5"></line>

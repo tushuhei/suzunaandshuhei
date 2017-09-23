@@ -1,6 +1,5 @@
 .hero {
   background-image: url(https://lh3.googleusercontent.com/K2qNz5FnPGpuRE7XkXOUQMEarhYzvS-t-tRYk_V7I4UGRKH7Ih4kqpDdlUL1iDbF1Vd3AHCvQTBBO1jCbBX-2yPgRQ);
-
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +18,7 @@
   .logo {
     width: 60%;
     max-width: 250px;
-    stroke: #603813;
+    stroke: $color-gold;
     transition: stroke 1s;
   }
 

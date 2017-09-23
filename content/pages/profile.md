@@ -13,27 +13,31 @@ profiles:
 
 commits:
   - title: 涼菜、千葉県に生まれる。
+    date: 1989.6.6
     image: https://lh3.googleusercontent.com/WIfys39RPu9BbpG-rtgUyM1nB0V77mNjgs4eX_6dJPX_jYvn04qfJ7jZtvk9JwlGC1ycDZ1P6IqJuW1qcMz72ULWK5CR8wprpHDpNTmff3gw2yi6R75m56ZBcCusmfqNKNov2ycX5jwoC1TGNPaerZk6CH6sMfLFwKItDF5-D_eHStwp3IRiGHm9xxFF7BS3ZjSei_QFhtNSjWY0fh_2N91ZfWMO-amceuNpCaK53d6BIa3Zgoz6Rg0HkBG4yyat5uIrp-r3OKWTog7OVYMrj7BmDLJpXgZfpovE5e8GBCVdhwaNPyCYAGX4rDhP1lTXMe3MmoUbv2dvzn-ObKedx-JvBWljm5nObx6WdeZFFL7-CO8Cguwq90FKaAW58pP8Td_27Yze3_Fs7sfHF1RcRTcf-JdoapdpfUI7P-iG_ImKbEOb5I8iw4tjnfwqvCnRksqU_RQqFHAGfW5yztp7QfX0-o_HE-iIKikaGv4vyMy0axqDDpsafzfvyWmJo1WNVDde-vGyD5MLYl4OfUvCT_a27DJokaQQTnlV0WxoidHqdC-SM2lUvG38wmhe6l4_DN2Q0GcAc51FQeB9fKus9_t2b5Fqt0aO0norQLGMj5T50P7Qo0gaAqlr4S9Xyr-V5vtc5G4xXtcaNsJF7ozf8ZvhQdy60WGOOxtw=w400-c
     graphs:
-      - - color: cyan
+      - - color: 1
           type: init
   - title: 修平、茨城県土浦市に生まれる。
+    date: 1989.10.17
     image: https://lh3.googleusercontent.com/WIfys39RPu9BbpG-rtgUyM1nB0V77mNjgs4eX_6dJPX_jYvn04qfJ7jZtvk9JwlGC1ycDZ1P6IqJuW1qcMz72ULWK5CR8wprpHDpNTmff3gw2yi6R75m56ZBcCusmfqNKNov2ycX5jwoC1TGNPaerZk6CH6sMfLFwKItDF5-D_eHStwp3IRiGHm9xxFF7BS3ZjSei_QFhtNSjWY0fh_2N91ZfWMO-amceuNpCaK53d6BIa3Zgoz6Rg0HkBG4yyat5uIrp-r3OKWTog7OVYMrj7BmDLJpXgZfpovE5e8GBCVdhwaNPyCYAGX4rDhP1lTXMe3MmoUbv2dvzn-ObKedx-JvBWljm5nObx6WdeZFFL7-CO8Cguwq90FKaAW58pP8Td_27Yze3_Fs7sfHF1RcRTcf-JdoapdpfUI7P-iG_ImKbEOb5I8iw4tjnfwqvCnRksqU_RQqFHAGfW5yztp7QfX0-o_HE-iIKikaGv4vyMy0axqDDpsafzfvyWmJo1WNVDde-vGyD5MLYl4OfUvCT_a27DJokaQQTnlV0WxoidHqdC-SM2lUvG38wmhe6l4_DN2Q0GcAc51FQeB9fKus9_t2b5Fqt0aO0norQLGMj5T50P7Qo0gaAqlr4S9Xyr-V5vtc5G4xXtcaNsJF7ozf8ZvhQdy60WGOOxtw=w400-c
+    body: 元気に生まれてきました。名前は「しゅうちゃん」というあだ名で呼ばれるようデザインされています。
     graphs:
-      - - color: cyan
+      - - color: 1
           type: pass
-      - - color: yellow
+      - - color: 2
           type: init
   - title: 涼菜と修平、茗溪学園で出会う
+    date: 2002.4.1
     image: https://lh3.googleusercontent.com/WIfys39RPu9BbpG-rtgUyM1nB0V77mNjgs4eX_6dJPX_jYvn04qfJ7jZtvk9JwlGC1ycDZ1P6IqJuW1qcMz72ULWK5CR8wprpHDpNTmff3gw2yi6R75m56ZBcCusmfqNKNov2ycX5jwoC1TGNPaerZk6CH6sMfLFwKItDF5-D_eHStwp3IRiGHm9xxFF7BS3ZjSei_QFhtNSjWY0fh_2N91ZfWMO-amceuNpCaK53d6BIa3Zgoz6Rg0HkBG4yyat5uIrp-r3OKWTog7OVYMrj7BmDLJpXgZfpovE5e8GBCVdhwaNPyCYAGX4rDhP1lTXMe3MmoUbv2dvzn-ObKedx-JvBWljm5nObx6WdeZFFL7-CO8Cguwq90FKaAW58pP8Td_27Yze3_Fs7sfHF1RcRTcf-JdoapdpfUI7P-iG_ImKbEOb5I8iw4tjnfwqvCnRksqU_RQqFHAGfW5yztp7QfX0-o_HE-iIKikaGv4vyMy0axqDDpsafzfvyWmJo1WNVDde-vGyD5MLYl4OfUvCT_a27DJokaQQTnlV0WxoidHqdC-SM2lUvG38wmhe6l4_DN2Q0GcAc51FQeB9fKus9_t2b5Fqt0aO0norQLGMj5T50P7Qo0gaAqlr4S9Xyr-V5vtc5G4xXtcaNsJF7ozf8ZvhQdy60WGOOxtw=w400-c
     graphs:
-      - - color: cyan
+      - - color: 1
           type: pass
-        - color: yellow
+        - color: 2
           type: cross
-        - color: magenta
+        - color: 3
           type: init
-      - - color: yellow
+      - - color: 2
           type: curve
 ---
 

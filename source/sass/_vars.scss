@@ -1,6 +1,15 @@
 $bp-m: 768px;
 
-$main-color: #006638;
-$accent-color: #7d0300;
-$base-color: #fcf1d3;
-$background-color: #fffdf8;
+$color-black: #222;
+$color-gold: #603813;
+$color-gray: #777;
+$color-green: #006638;
+$color-red: #7d0300;
+$color-beige: #fcf1d3;
+$color-white: #fffdf8;
+$color-purple: #4A507E;
+
+$main-color: $color-green;
+$accent-color: $color-red;
+$base-color: $color-beige;
+$background-color: $color-white;

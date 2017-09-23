@@ -3,13 +3,15 @@
   width: 100%;
   align-items: center;
 
-  &__content {
-  }
-
   &__thread {
-    width: 100px;
-    height: 200px;
+    height: 80px;
+    flex: 0 0 40px;
     position: relative;
+
+    @media only screen and (min-width : $bp-m) {
+      flex: 0 0 80px;
+      height: 160px;
+    }
   }
 
   &__graph {
@@ -19,22 +21,41 @@
     width: 100%;
     position: absolute;
 
-    &--cyan {
-      color: #0ff;
+    &--1 {
+      color: $color-green;
     }
 
-    &--yellow {
-      color: #ff0;
+    &--2 {
+      color: $color-purple;
     }
 
-    &--magenta {
-      color: #f0f;
+    &--3 {
+      color: $color-red;
     }
+
+  }
+
+  &__date {
+    color: $color-gray;
+  }
+
+  &__title {
+    margin: 0;
   }
 
   &__image {
     float: left;
-    width: 100px;
-    border-radius: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 20px;
+
+    @media only screen and (min-width : $bp-m) {
+      width: 100px;
+      border-radius: 50px;
+    }
+  }
+
+  &__body {
+    margin: 0.5em 0;
   }
 }
