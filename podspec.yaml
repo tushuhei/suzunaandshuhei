@@ -18,11 +18,6 @@ static_dirs:
 - static_dir: /source/images/
   serve_at: /static/images/
 
-preprocessors:
-- kind: sass
-  sass_dir: /source/sass/
-  out_dir: /dist/
-
 deployments:
   default:
     destination: local
