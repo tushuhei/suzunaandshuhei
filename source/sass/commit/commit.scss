@@ -1,20 +1,24 @@
+$graph-width: 30px;
+$graph-width-desktop: 80px;
+
+
 .commit {
+  align-items: top;
   display: flex;
   width: 100%;
-  align-items: top;
 
   &__thread {
-    flex: 0 0 40px;
+    flex: 0 0 $graph-width;
     position: relative;
 
     @media only screen and (min-width : $bp-m) {
-      flex: 0 0 80px;
+      flex: 0 0 $graph-width-desktop;
     }
   }
 
   &__graph {
     display: block;
-    height: 40px;
+    height: $graph-width;
     position: absolute;
     stroke: currentColor;
     stroke-width: 3;
@@ -22,16 +26,16 @@
 
     @media only screen and (min-width : $bp-m) {
       stroke-width: 5;
-      height: 80px;
+      height: $graph-width-desktop;
     }
 
     &--ext {
-      margin-top: 40px;
-      height: calc(100% - 40px);
+      margin-top: $graph-width;
+      height: calc(100% - #{$graph-width});
 
       @media only screen and (min-width : $bp-m) {
-        margin-top: 80px;
-        height: calc(100% - 80px);
+        margin-top: $graph-width-desktop;
+        height: calc(100% - #{$graph-width-desktop});
       }
     }
 
@@ -57,15 +61,7 @@
   }
 
   &__image {
-    float: left;
-    width: 50px;
-    border-radius: 25px;
-    margin-right: 20px;
-
-    @media only screen and (min-width : $bp-m) {
-      width: 100px;
-      border-radius: 50px;
-    }
+    width: 100%;
   }
 
   &__body {

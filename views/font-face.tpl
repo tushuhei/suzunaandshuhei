@@ -1,28 +1,34 @@
+@font-face {
+font-family: 'Noto Sans CJK JP';
+font-weight: 100;
+src: local("Noto Sans CJK JP Thin"),
+     local("NotoSansCJKjp-Thin");
+}
 
 @font-face {
-font-family: 'Bourton Hand';
+font-family: 'Noto Sans CJK JP';
+font-weight: 300;
+src: local("Noto Sans CJK JP Light"),
+     local("NotoSansCJKjp-Light");
+}
+
+@font-face {
+font-family: 'Noto Sans CJK JP';
 font-weight: 400;
-src: url(/static/fonts/Bourton-Hand-Line-Bold.ttf) format("truetype"),
-     url(/static/fonts/Bourton-Hand-Line-Bold.woff) format("woff");
+src: local("Noto Sans CJK JP Regular"),
+     local("NotoSansCJKjp-Regular");
 }
 
 @font-face {
-font-family: 'Bourton Hand';
+font-family: 'Noto Sans CJK JP';
+font-weight: 500;
+src: local("Noto Sans CJK JP Medium"),
+local("NotoSansCJKjp-Medium");
+}
+
+@font-face {
+font-family: 'Noto Sans CJK JP';
 font-weight: 700;
-src: url(/static/fonts/Bourton-Hand-Base.ttf) format("truetype"),
-     url(/static/fonts/Bourton-Hand-Base.woff) format("woff");
-}
-
-@font-face {
-font-family: 'Bourton Hand Script';
-font-weight: 400;
-src: url(/static/fonts/Bourton_Hand-Script-Light.ttf) format("truetype"),
-     url(/static/fonts/Bourton-Hand-Script-Light.woff) format("woff");
-}
-
-@font-face {
-font-family: 'Bourton Hand Script';
-font-weight: 700;
-src: url(/static/fonts/Bourton_Hand-Script-Bold.ttf) format("truetype"),
-     url(/static/fonts/Bourton-Hand-Script-Bold.woff) format("woff");
+src: local("Noto Sans CJK JP Bold"),
+     local("NotoSansCJKjp-Bold");
 }

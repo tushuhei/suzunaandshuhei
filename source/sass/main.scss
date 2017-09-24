@@ -4,7 +4,8 @@
 body {
   background: $background-color;
   color: $color-black;
-  font-family: Helvetica Neue, 'Noto Sans CJK JP', arial, sans-serif;
+  font-family: $font-family-sans;
+  font-weight: 300;
 }
 
 @import "menu-icon/menu-icon";
