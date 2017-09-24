@@ -1,0 +1,26 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /static/
+  static_dir: out/static/
+
+- url: /profile/
+  static_files: out/profile/index.html
+  upload: out/profile/index.html
+
+- url: /
+  static_files: out/index.html
+  upload: out/index.html
+
+skip_files:
+- node_modules/*
+- dist/*
+- source/*
+- content/*
+- view/*

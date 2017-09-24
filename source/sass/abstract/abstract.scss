@@ -1,0 +1,18 @@
+.abstract {
+  text-align: center;
+  margin: 3em 0;
+
+  &__main {
+    color: $color-gold;
+    font-size: 3.6em;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  &__sub{
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: 0;
+    padding-top: 20px;
+  }
+}
