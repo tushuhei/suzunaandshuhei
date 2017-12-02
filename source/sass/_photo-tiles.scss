@@ -1,0 +1,50 @@
+.photo-tiles {
+  position: relative;
+  height: 300px;
+  @include bp(s) {
+    height: 330px;
+    height: 40vw;
+  }
+  @include bp(m) {
+    height: 360px;
+  }
+
+  &__item {
+    border: solid 3px #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    position: absolute;
+    @include bp(s) {
+      width: 33%;
+      border: solid 6px #fff;
+    }
+  }
+
+  &__item:nth-child(1) {
+    left: 0%;
+    transform: rotateZ(-18deg);
+    top: 80px;
+    @include bp(s) {
+      left: 5%;
+      top: 60px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    transform: rotateZ(18deg);
+    top: 80px;
+    left: 50%;
+    @include bp(s) {
+      top: 60px;
+      left: 61%;
+    }
+  }
+
+  &__item:nth-child(3) {
+    left: 25%;
+
+    @include bp(s) {
+      left: 33%;
+    }
+  }
+}

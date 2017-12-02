@@ -1,40 +1,122 @@
 {% extends "/views/base.html" %}
 
 {% block main %}
-  <section class="hero" id="hero" v-bind:class="{'hero--loaded': loaded}">
-    <div class="hero__container" id="hero__container">
+<div class="hero">
+  <div class="hero__image"></div>
+  <h1 class="hero__logo">{% include "source/images/logo.svg" %}</h1>
+</div>
+<div class="section section--darker section--center">
+  <div class="section__page section__page--narrow">
+    <p>
+      謹啓 初冬の候 皆様にはますます
+      ご清祥のこととお慶び申し上げます
+      このたび 私たちは結婚式を挙げることになりました
+      つきましては 日頃お世話になっている皆さまに
+      私たちの門出を見守っていただきたく
+      ささやかですが 小宴をもうけました
+      おいそがしい中誠に恐縮ですが
+      ご出席くださいますようご案内申し上げます
+    </p>
+    <p>
+      飯塚 修平・涼菜
+    </p>
+  </div>
+</div>
+<section class="section">
+  <img class="section__media" alt="自由学園 明日館" src="https://lh3.googleusercontent.com/hIzRIvAw1PLBUryIW9duoKwfz67quDbDAsea36QIh0zH0a1hSTGYHkdATZboWWZm7rJlei-Q638X7EE8E4IAV2c=w1600-rj">
+  <div class="section__page section__page--notop-m">
+    <div class="section__content section__content--half">
+      <h2 class="section__eyeblow">会場</h2>
+      <h3 class="section__heading">自由学園 明日館</h3>
+      <p>
+        〒171-0021 東京都豊島区西池袋 2-31-3
+        <br>
+        ウェディングデスク
+        TEL 03-5952-8877
+      </p>
+      <p>
+        池袋駅メトロポリタンプラザより徒歩５分
+        <br>
+        目白駅より徒歩７分
+      </p>
+      <a class="button" href="https://goo.gl/maps/Zoqn2YpZwv52">Google Map で見る</a>
     </div>
-  </section>
-
-  <section class="section abstract" id="abstract">
-    <div class="section__page">
-      <h2 class="abstract__main">飯塚涼菜・修平 結婚式</h2>
-      <h3 class="abstract__sub">2018 年 3 月 18 日 自由学園明日館にて</h3>
+  </div>
+</section>
+<section class="section section--darker section--center">
+  <div class="section__page">
+    <h2 class="section__eyeblow">日時</h2>
+    <h3 class="section__heading">2018 年 3 月 18 日</h3>
+    <p>
+    受付　午前 10 時 30 分
+    <br>
+    挙式　午前 11 時
+    <br>
+    披露宴　午前 12 時
+    </p>
+  </div>
+</section>
+<section class="section">
+  <img class="section__hero-media" alt="飯塚 修平と草間 涼菜" src="https://lh3.googleusercontent.com/tRI1v1wvptqPP4kZpVjmPpwM9pm2fykws9zW3tnCCO-SRJKd_C5XFvgk4JwU-aduV9nc0sWTtQpJ8tSrzMPG72D1qqS3sGNKbRE-CFgeYW2PpZBP71E7YqfzzIELuR8mGCqzuXDgLmydNUrbzduPCUDG1_Fmc3NJRvplWtxZyeG05RSBYe1x9mLveCe0bLBt1IpO7WUmiidnmCqzTaSizQKMK03E-Ad9yOeRHjv9BhD1Y8yqUHCncPezjmDSJoaGQWndac2W6HBs6gTQ65DMYLsfCKM9lE2zPrVkv46y4kI3WB7Mt7B3d2LXSLD01Sb9vwYFCn6HHA8ZQjkDf_1Ltx8vdX18mVGk5Y838PU82O9bizgk0OP2rqXoLZKbIdfBjupLziSV0Ip9dD99Gh0cK57Q-lyUPnvvA4byrLkWg5yJ7osLeBwMs8NEKHk6IaOx9U6_ix2McsmD93Wa0UZqgcPHxCGnQ5rrbVv9cQGLxvrCj06jFz65oRnn3tp8AjWzp6KI_ESWIokUAr4om15JUU7friv0crfbD7vqKBLzhCH_YaRN-01Mvpr6-bypp3uEO6N6GI-qfegkEMErGWumRitWGyJijHovr791KaX4ElDNIZWwN9wmGl0AVViY4gka7pRX56mg_TLyx5xtbllqXlh039OxjDcJ8CBI=w1600-rj">
+  <div class="section__page section__page--notop-m">
+    <div class="section__content">
+      <h2 class="section__eyeblow">プロフィール</h2>
     </div>
-  </section>
-
-  <section class="giant-card" id="venue">
-    <img class="giant-card__media" src="https://lh3.googleusercontent.com/hIzRIvAw1PLBUryIW9duoKwfz67quDbDAsea36QIh0zH0a1hSTGYHkdATZboWWZm7rJlei-Q638X7EE8E4IAV2c=w1600">
-    <div class="giant-card__content">
-      <div class="giant-card__page">
-        <h3>会場</h3>
-        <h4>明日館</h4>
+    <div class="section__content--half">
+      <h3 class="section__heading">飯塚 修平</h3>
+      <p>
+      茨城県土浦市生まれ。茗渓学園高等学校卒業後、東京大学に入学し、プログラミングとウェブの世界に出会う。
+      東京大学工学部松尾豊研究室にてウェブマイニング・ウェブサイト最適化の研究に従事した後、2014 年 Google 株式会社に入社。
+      UX (User Experience) エンジニアとして、より良いユーザ体験を提供するウェブサイトの開発に取り組む。
+      同時に社会人として博士課程に入学し、2017 年に博士（工学）を取得。
+      </p>
+    </div><div class="section__content--half">
+      <h3 class="section__heading">草間 涼菜</h3>
+      <p>
+      茨城県結城郡八千代町生まれ。茗渓学園高等学校卒業後、
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section--invert section--center">
+  <div class="section__page section__page--narrow">
+    <h2 class="section__heading">出席登録</h2>
+    <p>
+    招待状を受け取られました皆さまにおきましては、下記登録フォームから出席の可否のご返事をお願いしております。
+    誠に勝手ながら、◯月◯日までにご返事をいただけますと幸いに存じます。
+    すでにお葉書にてお返事を頂いた方につきましては、フォームの入力は結構です。
+    </p>
+    <div class="button button--invert">出席登録フォーム</div>
+  </div>
+</section>
+<section class="section section--darker section--center">
+  <div class="section__page">
+    <div class="section__content">
+      <div class="photo-tiles">
+        <img class="photo-tiles__item" alt="" src="https://lh3.googleusercontent.com/358lKrV8PINVc16om1rlU88CUHwBO9uk2TeZ-lwyZzT0aMRXH_Gi_pGn20RD_yXOfa7UtAjNnX-wHPrEFjoO35BsjmDK8n4AGhFymuO6HS_CzyZMJc5ZFw6TqBzI2E9zLk9UG2ddR--xx9wxnN51Mx21u9rjuuVMM3FQbpehSQMx-Vzd7bRZ_6Peej-WLNjeHAbo2Mfoz1Tum90UmrG3AnJkgI6ttp6-FLThQwyUlzXhhkDqipVigjF78NADks0ZJyw3F6d4UCqhdhZHqtHmlTqXL4NUofrmlhcPR8ITY--ZjZX5ZSCXWRRy_1q-csjhslPj9Cv6SRu2ifr7Nap_IrMgsfPWxcERj_xaS0LeiOpMRkSErfAJEmmFTrKZ8mzQVRoiQnAsZUDWPo_hDZTRz5-9UXFlSUqHs-PztjOkWGl1QVh0BbGwP9duXnywunbpJSO5nNdv9nxlc74w3QrswMuSR8dX2mQSMZowgkKT4yvduFNIE5BsizLwovuPARqyccDgkCySQJVikzLQ8XEYbt40D6q-Kv7eWBWzpaYaGrYZnlY2DkJOCL1LHaZ3hMGcyIjgroiidsAGp0fQ1hAihLliQXhiMW6-gi6ALPLGfqPofE7WSzd7K8gr2tydtL5ePJ7X3t5xINlXHCqqCPhz-jNC_TtLGSffyvTR=rj">
+        <img class="photo-tiles__item" alt="" src="https://lh3.googleusercontent.com/quOnBRosQJTrA0ZaSSb9VILvjOi6nO33Rt1w8xhB89AtKSNKb2gyWU8jSb5sLze0ONNpRxRTCqywRkT6nl7O04ye837RJtTtLVMij8YbafSptA7sbbZDTR9n4GaXg0J6zUL1nqZ1DTg7-zBRWVH931PCrwNAhOaJCijL2ptTnQFuRka2GFobTaVnVTDao4vYpK5Ndof5G6SS7QMClkIrBgGeREBhKn_RCN3WqEwRXxQknhX1Q7Laz_5kZq74MgE-EfO9XxwY0CNhsdRfDj_C1HWwafXqdfXkeghIauGJR2S76SkEV__7uyBoxuwFeHaMgchbaX0hyvx0zNonwJf_8k-UnJBlBB8NKBOufsUVoW559hI2lwamEWjw9BWGCQeeXmSc1SK8TFcnHhFhHeCe9wA12uYtFHXgjTewbv10gh_-CzR5bVoFOT6RiWvcL2NhmaZFMHmzpadE1r63iOyDy4PTaihWiDRWfKxFB9jFSi_2GjZ_Zw4Vmn5Ke3iDnIJ5oeCz-Xb6M0unHuUu4DYdtZaBSjp3HPPgEVpTjSou4ow0u3hYHAmfyZoYJxuia4nGwn4vExTpJB4nqS75zD4RmB_BUN8pnZBaKuYdHdmlFx4XbzMwle7Z12MJc6GD0J3yaP7Qb-XHC0yMH5mLxE76KmrtcMwzwwfodoiF=rj">
+        <img class="photo-tiles__item" alt="" src="https://lh3.googleusercontent.com/t_kmdT-X9AgD_lrGj9YgV8yaJqQZvuydnE5-vcDPTSeR4-3j-7HIUJ5hw5MNkIW1gRBLAtwaFTd2IwwHIWJv9J58R1Pt4HsToIySu1cqHqHH1hP7ydMeYWSeukON0D0Brg37g79fC-b8Mhfkml-L1cPUuvlXBy67PJwKJCBLuvdIL6s1RuzgSv-ufA0G1UNnsxKdnN2CCkXLnvATZpm9tGg_TcP8XpJrjSER-fkY6jJMXM-uZ96PAVa2bhTjRUlOoowUhg1H-1Y4VJIfuz4KVDSEr1kw2Lh5nSmWfwoQgpDcGGCJxEA-l8g0t5uy0kZa9L66KHh5SJ0dQWwA5cTg3-b_gc-dPDpr-3m9KdnTAv0R27In6ggEWRXrOrwblecj67ijUEihGvcJAGEtD8aCVlEKsfl0Z5yVGaD33DY4z7ld7wozmF6PkPirqct0tVTji5qLVv6vW4nLqQZSFxOB_EGUKOSSYp5mSRwwfQ25SgJAhkMYnYaMGAoup4DCdomv-etIM0ya6yVnhuprNgJr51IJL4imGEljyVI8_78Z6IEmnhQPK7FQViEJK-in5kdICkO5lhX585U9dtznF5X-ljM3g0hNqt9-biavUC6GrzXSbez3Q5YeqkUOve77_ciSHZXxKQIWC57sqKZS3tT3q-ddQA2Tt0-D3yzc=rj">
       </div>
     </div>
-  </section>
-
-  <section class="giant-card" id="map">
-    <iframe class="giant-card__media giant-card__media--alt" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1619.461201396507!2d139.70800170827056!3d35.72812687245591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2zSWtlYnVrdXJvIFN0YXRpb27jgIFUb2t5bywgVG9zaGltYSwg5Y2X5rGg6KKL77yR5LiB55uu77yS77yY4oiS77yR!3m2!1d35.7295028!2d139.7109001!4m5!1s0x60188d5cb31fdfc1%3A0x9221c4b3be3283ab!2z5piO5pel6aSo!3m2!1d35.726692!2d139.70725299999998!5e0!3m2!1sen!2sjp!4v1505742349047" frameborder="0" allowfullscreen></iframe>
-    <div class="giant-card__content giant-card__content--alt">
-      <div class="giant-card__page">
-        <h3>会場</h3>
-        <h4>明日館</h4>
-      </div>
+    <div class="section__content section__content--narrow section__content--liftup">
+      <h2 class="section__heading">写真アルバム</h2>
+      <p>
+        僭越ながら、当日の結婚式の様子と前撮り（正式名称？）の様子をアルバムにて共有しております。ご笑覧くださいませ。
+      </p>
+      <a class="button" href="https://photos.app.goo.gl/O3dfRuqjOKGzmhJa2">アルバムを見る</a>
     </div>
-  </section>
-
-  <footer class="footer">
-    Copyright © Shuhei Iitsuka. 2017.
-  </footer>
+  </div>
+</section>
+<div class="section section--center">
+  <div class="section__page section__page--narrow">
+    <p>
+      それでは当日 みなさまにお会い出来ることを楽しみにしております
+      式に際してご不明な点がございましたら下記アドレスまでお気軽にご連絡ください
+    </p>
+    <p>
+    飯塚 修平 <a href="mailto:tushuhei@gmail.com">tushuhei@gmail.com</a>
+    </p>
+  </div>
+</div>
 
 {% endblock %}

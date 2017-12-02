@@ -1,40 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{doc.locale}}">
 <head>
   <meta charset="utf-8">
-  <title>{{_(doc.title)}} – {{_(podspec.title)}}</title>
+  <title>Suzuna and Shuhei — 飯塚修平・草間涼菜 結婚式</title>
   <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
   <link rel="stylesheet" href="{{g.static('/dist/main.min.css').url.path}}">
-  <link rel="shortcut icon" href="{{g.static('/source/images/icon.png').url.path}}">
-  <meta name="description" value="{{_(podspec.description)}}">
+  <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <style>{% include "/views/font-face.tpl" %}</style>
 </head>
 <body>
-  <header class="header" id="header" v-bind:class="{'header--active': open}">
-    <div class="header__toggle menu-icon" v-on:click="open = !open" v-bind:class="{'menu-icon--active': open}">
-      <div class="menu-icon__bar"></div>
-      <div class="menu-icon__bar"></div>
-      <div class="menu-icon__bar"></div>
-    </div>
-    <h1 class="header__logo">Suzuna and Shuhei</h1>
-    <nav class="header__nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/profile/">Profile</a></li>
-        <li><a href="/photos/">Photos</a></li>
-      </ul>
-    </nav>
-  </header>
   <main>
     {% block main %}
       {{doc.html|safe}}
     {% endblock %}
-    </section>
   </main>
-  <footer>
+  <footer class="footer">
+    <p>Suzuna and Shuhei Wedding</p>
+    <p>©2017 Shuhei Iitsuka (<a href="https://tushuhei.com">tushuhei.com</a>)</p>
   </footer>
-  <script src="{{g.static('/source/js/vivus.js').url.path}}"></script>
-  <script src="{{g.static('/source/js/vue.js').url.path}}"></script>
-  <script src="{{g.static('/source/js/app.js').url.path}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+  var heroElement = document.querySelector('.hero');
+  new Vivus('sslogo', {duration: 200}, function() {
+    heroElement.classList.add('loaded');
+  });
+  </script>
 </body>
-
+</html>

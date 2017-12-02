@@ -1,0 +1,32 @@
+.button {
+  background: $color-primary;
+  border-radius: 2px;
+  display: inline-block;
+  font-family: $font-family-sans;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 10px 30px;
+  transition: background 0.3s;
+
+  &:hover {
+    background: lighten($color-primary, 5%);
+  }
+
+  &, &:visited, &:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &--invert {
+    color: $color-primary;
+    background: #fff;
+
+    &:hover {
+      background: darken(#fff, 15%);
+    }
+
+    &, &:visited, &:active {
+      color: $color-primary;
+    }
+  }
+}

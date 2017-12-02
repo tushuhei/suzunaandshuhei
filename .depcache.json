@@ -1,0 +1,7 @@
+{
+  "/content/pages/index.md": [
+    "/dist/main.min.css",
+    "/source/images/logo.svg",
+    "/views/font-face.tpl"
+  ]
+}

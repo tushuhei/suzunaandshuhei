@@ -1,19 +1,47 @@
+$background-color: #fff;
+$background-color-darker: #fff7ec;
+$font-family-serif: "Sawarabi Mincho", "Yu Mincho", YuMincho, serif;
+$font-family-sans: Roboto, "Noto Sans CJK JP", "Yu Gothic", YuGothic, sans-serif;
+$font-size-mobile: 16px;
+$font-size-desktop: 18px;
+$font-size-heading-mobile: 28px;
+$font-size-heading-desktop: 36px;
+$color-primary: #244202;
+$color-logo: #ad542a;
+$color-body: #420000;
+$color-footer: #210000;
+
 @import "../../node_modules/normalize.scss/normalize.scss";
-@import "vars";
+
+@mixin bp($point) {
+  @if $point == s {
+    @media screen and (min-width: 480px) { @content; }
+  }
+  @else if $point == m {
+    @media screen and (min-width: 1024px) { @content; }
+  }
+}
+
+
+html {
+  font-size: $font-size-mobile;
+  @include bp(m) {
+    font-size: $font-size-desktop;
+  }
+}
 
 body {
   background: $background-color;
-  color: $color-black;
-  font-family: $font-family-sans;
-  font-weight: 300;
+  color: $color-body;
+  font-family: $font-family-serif;
 }
 
-@import "menu-icon/menu-icon";
-@import "header/header";
-@import "hero/hero";
-@import "footer/footer";
-@import "section/section";
-@import "giant-card/giant-card";
-@import "commit/commit";
-@import "profile/profile";
-@import "abstract/abstract";
+a, a:active, a:visited {
+  color: $color-primary;
+}
+
+@import "hero";
+@import "section";
+@import "button";
+@import "photo-tiles";
+@import "footer";

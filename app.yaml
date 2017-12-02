@@ -6,17 +6,16 @@ handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+  secure: always
 
 - url: /static/
   static_dir: out/static/
-
-- url: /profile/
-  static_files: out/profile/index.html
-  upload: out/profile/index.html
+  secure: always
 
 - url: /
   static_files: out/index.html
   upload: out/index.html
+  secure: always
 
 skip_files:
 - node_modules/*
