@@ -7,6 +7,7 @@ $font-size-desktop: 18px;
 $font-size-heading-mobile: 28px;
 $font-size-heading-desktop: 36px;
 $color-primary: #244202;
+$color-accent: #f55e43;
 $color-logo: #ad542a;
 $color-body: #420000;
 $color-footer: #210000;
@@ -49,3 +50,4 @@ a, a:active, a:visited {
 @import "button";
 @import "photo-tiles";
 @import "footer";
+@import "header";

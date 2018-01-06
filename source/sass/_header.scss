@@ -1,0 +1,59 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  &.active {
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__cta {
+    float: right;
+    margin: 0;
+    font-size: 14px;
+    background: $color-accent;
+    padding: 10px 10px;
+
+    @include bp(s) {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+
+    &:hover {
+      background: lighten($color-accent, 5%);
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    margin: 12px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    @include bp(s) {
+      margin: 7px 0;
+      width: 200px;
+    }
+
+    @include bp(m) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.active &__logo {
+    opacity: 1;
+  }
+}
