@@ -23,12 +23,18 @@
     <p>©2017 Shuhei Iitsuka (<a href="https://tushuhei.com">tushuhei.com</a>)</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script src="/static/js/cookies.js"></script>
   <script>
     var heroElement = document.querySelector('.hero');
     var headerElement = document.querySelector('.header');
-    new Vivus('sslogo', {duration: 200}, function() {
+    if (docCookies.getItem('loaded')) {
       heroElement.classList.add('loaded');
-    });
+    } else {
+      new Vivus('sslogo', {duration: 200}, function() {
+	heroElement.classList.add('loaded');
+	docCookies.setItem('loaded', true);
+      });
+    }
     window.addEventListener('scroll', function(e) {
       var heroBottom = heroElement.getBoundingClientRect()['bottom'];
       if (heroBottom > 0) {
