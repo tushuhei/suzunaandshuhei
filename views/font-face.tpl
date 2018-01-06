@@ -1,34 +1,29 @@
 @font-face {
-font-family: 'Noto Sans CJK JP';
+font-family: 'Noto Serif CJK JP';
 font-weight: 100;
-src: local("Noto Sans CJK JP Thin"),
-     local("NotoSansCJKjp-Thin");
+src: local("Noto Serif CJK JP Extra Light"),
+     local("NotoSerifCJKjp-ExtraLight"),
+     url(/static/fonts/NotoSerifCJKjp-ExtraLight.otf) format("opentype"),
+     url(/static/fonts/NotoSerifCJKjp-ExtraLight.woff) format("woff"),
+     url(/static/fonts/NotoSerifCJKjp-ExtraLight.woff2) format("woff2");
 }
 
 @font-face {
-font-family: 'Noto Sans CJK JP';
-font-weight: 300;
-src: local("Noto Sans CJK JP Light"),
-     local("NotoSansCJKjp-Light");
-}
-
-@font-face {
-font-family: 'Noto Sans CJK JP';
+font-family: 'Noto Serif CJK JP';
 font-weight: 400;
-src: local("Noto Sans CJK JP Regular"),
-     local("NotoSansCJKjp-Regular");
+src: local("Noto Serif CJK JP Regular"),
+     local("NotoSerifCJKjp-Regular"),
+     url(/static/fonts/NotoSerifCJKjp-Regular.otf) format("opentype"),
+     url(/static/fonts/NotoSerifCJKjp-Regular.woff) format("woff"),
+     url(/static/fonts/NotoSerifCJKjp-Regular.woff2) format("woff2");
 }
 
 @font-face {
-font-family: 'Noto Sans CJK JP';
-font-weight: 500;
-src: local("Noto Sans CJK JP Medium"),
-local("NotoSansCJKjp-Medium");
-}
-
-@font-face {
-font-family: 'Noto Sans CJK JP';
+font-family: 'Noto Serif CJK JP';
 font-weight: 700;
-src: local("Noto Sans CJK JP Bold"),
-     local("NotoSansCJKjp-Bold");
+src: local("Noto Serif CJK JP Bold"),
+     local("NotoSerifCJKjp-Bold"),
+     url(/static/fonts/NotoSerifCJKjp-Bold.otf) format("opentype"),
+     url(/static/fonts/NotoSerifCJKjp-Bold.woff) format("woff"),
+     url(/static/fonts/NotoSerifCJKjp-Bold.woff2) format("woff2");
 }

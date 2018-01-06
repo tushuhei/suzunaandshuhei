@@ -23,3 +23,5 @@ skip_files:
 - source/*
 - content/*
 - view/*
+- NotoSerifCJKjp-hinted/*
+- .git/*

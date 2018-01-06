@@ -5,3 +5,7 @@ build
 dist
 node_modules
 out
+glyphs.txt
+budou-cache.shelve.db
+credentials.json
+NotoSerifCJKjp-hinted

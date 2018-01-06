@@ -1,7 +1,7 @@
 $background-color: #fff;
 $background-color-darker: #fff7ec;
-$font-family-serif: "Sawarabi Mincho", "Yu Mincho", YuMincho, serif;
-$font-family-sans: Roboto, "Noto Sans CJK JP", "Yu Gothic", YuGothic, sans-serif;
+$font-family-serif: "Times New Roman", "Yu Mincho", YuMincho, "Noto Serif CJK JP", serif;
+$font-family-sans: Roboto, "Yu Gothic", YuGothic, sans-serif;
 $font-size-mobile: 16px;
 $font-size-desktop: 18px;
 $font-size-heading-mobile: 28px;
@@ -38,6 +38,10 @@ body {
 
 a, a:active, a:visited {
   color: $color-primary;
+}
+
+.ww {
+  display: inline-block;
 }
 
 @import "hero";
