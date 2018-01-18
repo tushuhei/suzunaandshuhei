@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="{{g.static('/dist/main.min.css').url.path}}">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <style>{% include "/views/font-face.tpl" %}</style>
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-30923853-8', 'auto');
+    ga('require', 'outboundLinkTracker');
+    ga('send', 'pageview');
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script async src="/static/js/autotrack.js"></script>
 </head>
 <body>
   <header class="header">
